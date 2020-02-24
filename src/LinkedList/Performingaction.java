@@ -68,4 +68,20 @@ public class Performingaction {
             }
         }
     }
+
+    public void viewcontact(NewLinkedList linkedList1) {
+
+        System.out.println("---Here are all your contacts---");
+
+        if (!linkedList1.isEmpty()) {
+
+            linkedList1.display();
+
+        } else {
+
+            System.out.println("NO results found");
+
+        }
+
+    }
 }

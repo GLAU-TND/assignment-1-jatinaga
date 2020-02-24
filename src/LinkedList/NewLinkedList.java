@@ -18,3 +18,9 @@ public class NewLinkedList {
 
 
     }
+
+    public boolean isEmpty() {
+    }
+
+    public void display() {
+    }
