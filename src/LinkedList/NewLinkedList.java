@@ -24,3 +24,9 @@ public class NewLinkedList {
 
     public void display() {
     }
+
+    public void displayOne() {
+    }
+
+    public void deleteNode(int choice) {
+    }
