@@ -89,26 +89,28 @@ public class Performingaction {
 
         if (!linkedList1.isEmpty()) {
 
-            System.out.println("Here are all the contacts: Press the number against" +
-
-                    " to delete the contact.");
-
+            System.out.println("Here all the contacts: Press the number against" + " to delete the contact.");
             linkedList1.displayOne();
-
             int choice = scanner.nextInt();
-
             scanner.nextLine();
-
             linkedList1.deleteNode(choice);
-
             linkedList1.displayOne();
-
             System.out.println("Deleted..!!");
 
         } else {
+            System.out.println("No Contacts.You need to add contacts Before you could delete..");
+        }
 
-            System.out.println("No Contacts.You must need to add contacts Before you could delete..");
+    }
 
+    public void searchContact(NewLinkedList linkedList1) {
+        System.out.println("You could search for a contact from their first names: ");
+        String firstName = scanner.nextLine().trim();
+        if (linkedList1.indexOf(firstName) >= 0) {
+            System.out.println("Match found");
+            linkedList1.getNode(linkedList1.indexOf(firstName));
+        } else {
+            System.out.println("No match found");
         }
 
     }

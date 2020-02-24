@@ -30,3 +30,9 @@ public class NewLinkedList {
 
     public void deleteNode(int choice) {
     }
+
+    public boolean indexOf(String firstName) {
+    }
+
+    public void getNode(boolean indexOf) {
+    }
