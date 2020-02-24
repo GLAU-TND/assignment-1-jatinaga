@@ -28,7 +28,13 @@ public class NewLinkedList {
     }
 
     public boolean isEmpty() {
+        boolean response = false;
+        if (first == null) {
+            response = true;
+        }
+        return response;
     }
+
 
     public void display() {
     }
